@@ -1,16 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="noindex" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/produkt.css" />
+    <link rel="stylesheet" href="css/menu.css" />
+    <title>Produktside</title>
+      
     <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
     <link rel="manifest" href="favicon/site.webmanifest">
 </head>
-<body>
-    
-</body>
+  <body>
+    <header>
+      <nav>
+        <ul class="menu">
+          <li><a href="produkt.html">HERBS</a></li>
+          <li><a href="#">RECIPES</a></li>
+          <li><a href="#">ABOUT</a></li>
+        </ul>
+        <div class="burger">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <template class="grid1_1" id="produktTemplate">
+        <section>
+          <div>
+            <img src="img/BgCirkel.webp" alt="Baggrund til urt" />
+            <img id="UrtPåCirkel" src="" alt="billede af urt" />
+          </div>
+          <h1></h1>
+        </section>
+
+        <div>
+          <p class="introTekst"></p>
+        </div>
+
+        <article class="looksLike">
+          <div>
+            <img src="" alt="" />
+          </div>
+          <h2 class="h2_produktside_rød">How it looks</h2>
+          <p></p>
+        </article>
+
+        <article class="findHere">
+          <h2 class="h2_produktside_grøn">Find it here</h2>
+          <p></p>
+
+          <div class="grid1_1">
+            <ul>
+              <li id="area0"></li>
+              <li id="area1"></li>
+              <li id="area2"></li>
+              <li id="area3"></li>
+              <li id="area4"></li>
+              <li id="area5"></li>
+              <li id="area6"></li>
+              <li id="area7"></li>
+              <li id="area8"></li>
+              <li id="area9"></li>
+            </ul>
+
+            <div>
+              <img src="" alt="" />
+            </div>
+          </div>
+        </article>
+      </template>
+    </main>
+    <footer></footer>
+    <script src="js/menu.js"></script>
+  </body>
+  <script src="js/main.js"></script>
 </html>

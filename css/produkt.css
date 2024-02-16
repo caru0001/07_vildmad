@@ -1,0 +1,38 @@
+.introTekst {
+  font-family: sans-serif; /* skal skiftes ud HUSK!! */
+  font-size: 36px;
+  color: #0a2c05;
+}
+
+.h2_produktside_grøn {
+  font-size: 36px;
+  color: #0a2c05;
+}
+.h2_produktside_rød {
+  font-size: 36px;
+  color: #5b1419;
+}
+
+
+/* ------------------------- WEB ------------------------ */
+@media (min-width: 700px) {
+  .grid1_1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+  }
+
+  #UrtPåCirkel {
+    position: absolute;
+  }
+}
+
+/* ------------------------- MOBIL ------------------------ */
+@media (min-width: 700px) {
+  #UrtPåCirkel {
+    position: absolute;
+  }
+}
+
+
+
