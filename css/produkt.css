@@ -1,22 +1,39 @@
 .introTekst {
   font-family: sans-serif; /* skal skiftes ud HUSK!! */
   font-size: 36px;
-  color: #0A2C05;
+  color: #0a2c05;
 }
 /* ------------------------- WEB ------------------------ */
 @media (min-width: 700px) {
-    .h2_produktside_grøn{
-        font-size: 36px;
-        color:#0A2C05;
-    }
-    .h2_produktside_rød{
-        font-size: 36px;
-        color:#5B1419;
-    }
+  .h2_produktside_grøn {
+    font-size: 36px;
+    color: #0a2c05;
+  }
+  .h2_produktside_rød {
+    font-size: 36px;
+    color: #5b1419;
+  }
 
   .grid1_1 {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 1rem;
+  }
+
+ 
+  h1 {
+    font-size: 48px;
+  }
+
+
+  .rødTekst {
+    color: #5b1419;
+    max-width: 520px;
+    background-color: #a3af86;
+  }
+
+  .grønTekst {
+    max-width: 520px;
+    background-color: #a79a74;
   }
 }

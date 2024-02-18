@@ -1,0 +1,45 @@
+body {
+  background-color: #b8c198;
+}
+
+@font-face {
+  font-family: "quickBold";
+  src: url("../font/Quicksand-Bold.woff2");
+}
+@font-face {
+  font-family: "quicReg";
+  src: url("../font/Quicksand-Regular.woff2");
+}
+@font-face {
+  font-family: "quicLight";
+  src: url("../font/Quicksand-Light.woff2");
+}
+
+h1 {
+  font-family: "quickBold";
+  font-size: 60px;
+  color: #fffcf4;
+}
+
+h2 {
+  font-family: "quickBold";
+  font-size: 44px;
+  color: #0a2c05;
+}
+
+h3 {
+  font-family: "quickBold";
+  font-size: 32px;
+  color: #0a2c05;
+}
+
+p {
+  font-family: "quickReg";
+  font-size: 20px;
+  color: #0a2c05;
+  max-width: 520px;
+}
+
+.introTekst {
+  font-size: 36px;
+}
