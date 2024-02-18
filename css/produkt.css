@@ -1,28 +1,51 @@
 .introTekst {
   font-family: sans-serif; /* skal skiftes ud HUSK!! */
   font-size: 36px;
-  color: #0A2C05;
+  color: #0a2c05;
 }
 .h2_produktside_rød {
   font-size: 36px;
   color: #5b1419;
 }
 
-
 /* ------------------------- WEB ------------------------ */
 @media (min-width: 700px) {
-    .h2_produktside_grøn{
-        font-size: 36px;
-        color:#0A2C05;
-    }
-    .h2_produktside_rød{
-        font-size: 36px;
-        color:#5B1419;
-    }
+  .h2_produktside_grøn {
+    font-size: 36px;
+    color: #0a2c05;
+  }
+  .h2_produktside_rød {
+    font-size: 36px;
+    color: #5b1419;
+  }
 
   .grid1_1 {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 1rem;
+  }
+
+  #urtPåCirkel {
+    position: absolute;
+  }
+
+  h1 {
+    font-size: 48px;
+  }
+
+  .h2_produktside_rød {
+    text-align: center;
+  }
+  .h2_produktside_grøn {
+    text-align: center;
+  }
+
+  .rødTekst {
+    color: #5b1419;
+    max-width: 520px;
+  }
+
+  .grønTekst {
+    max-width: 520px;
   }
 }
