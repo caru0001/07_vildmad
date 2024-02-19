@@ -137,4 +137,17 @@
 
     rotate: -20deg;
   }
+
+  #test {
+    margin: 5rem;
+  }
+  #quizbtn {
+    background-image: url("../img/efteraar_ikon.webp");
+    color: #5b1419;
+    padding-top: 10px;
+    border-radius: 90%;
+    text-align: center;
+    max-width: 100px;
+    height: 40px;
+  }
 }
