@@ -144,10 +144,10 @@
   #quizbtn {
     background-color: #fffcf4;
     color: #5b1419;
-    padding-top: 10px;
+    padding-top: 2.5rem;
     border-radius: 90%;
     text-align: center;
-    width: 200px;
-    height: 200px;
+    width: 150px;
+    height: 100px;
   }
 }
