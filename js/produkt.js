@@ -21,7 +21,7 @@ function showData(item) {
   const copy = template.cloneNode(true);
 
   /* ændre indhold i template */
-  copy.querySelector("#UrtPåCirkel").src = item.urtImg;
+  copy.querySelector("#UrtPåCirkel").src = `img/herbs/${item.urtImg}`;
   copy.querySelector("h1").textContent = item.name;
 
   copy.querySelector(".introTekst").textContent = item.introduction;
@@ -30,7 +30,7 @@ function showData(item) {
 
   copy.querySelector(".findHere p").textContent = item.area_description;
 
-  copy.querySelector("#area0").textContent = item.area / 0;
+  /*  copy.querySelector("#area0").textContent = item.area / 0; */
 
   /* append */
   document.querySelector("main").appendChild(copy);
