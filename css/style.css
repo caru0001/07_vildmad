@@ -3,15 +3,20 @@ body {
 }
 
 @font-face {
+  font-family: "karla";
+  src: url(../fonts/Karla-Regular.ttf);
+}
+
+@font-face {
   font-family: "quickBold";
   src: url("../font/Quicksand-Bold.woff2");
 }
 @font-face {
-  font-family: "quicReg";
+  font-family: "quickReg";
   src: url("../font/Quicksand-Regular.woff2");
 }
 @font-face {
-  font-family: "quicLight";
+  font-family: "quickLight";
   src: url("../font/Quicksand-Light.woff2");
 }
 
@@ -25,6 +30,7 @@ h2 {
   font-family: "quickBold";
   font-size: 44px;
   color: #0a2c05;
+  margin-bottom: 30px;
 }
 
 h3 {
@@ -42,6 +48,7 @@ p {
 }
 
 .introTekst {
-  font-size: 36px;
+  font-size: 26px;
   max-width: 720px;
+  margin-bottom: 40px;
 }

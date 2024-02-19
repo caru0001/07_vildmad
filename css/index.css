@@ -1,0 +1,61 @@
+main {
+  margin: 50px;
+}
+
+.app_grid {
+  display: flex;
+  gap: 10px;
+  align-content: center;
+  margin: 0 auto;
+}
+
+.mobile img {
+  width: 350px;
+}
+
+.app_text {
+  background-color: rgb(138, 90, 58, 0.38);
+  padding: 30px;
+}
+
+.path img {
+  width: 350px;
+}
+
+.seasons_grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+  align-content: center;
+  margin: auto;
+}
+
+.season_clickable {
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+
+.season_clickable img {
+  max-width: 100%;
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  background-color: rgba(255, 252, 244, 0.85);
+}
+
+.season_clickable h3 {
+  margin: 10px;
+  text-align: center;
+}
+
+.quiz {
+  background-color: #FFFCF4;
+  font-family: "karla";
+  text-decoration: none;
+  font-size: 36px;
+  border-radius: 50px;
+  padding: 10px 45px;
+  color: #0a2c05;
+}

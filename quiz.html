@@ -17,14 +17,14 @@
 
 <body>
     <header>
+        <div class="logo">
+            <a href="index.html"><img src="img/logo.webp" alt="logo"></a>
+        </div>
         <nav>
-            <div class="logo">
-                <a href="index.html"><img src="img/logo.webp" alt="brandnælde + overskift"></a>
-            </div>
             <ul class="menu">
-                <li><a href="produkt.html">HERBS</a></li>
-                <li><a href="#">RECIPES</a></li>
-                <li><a href="#">ABOUT</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="produktliste.html">Herbs</a></li>
+                <li><a href="quiz.html">Quiz</a></li>
             </ul>
             <div class="burger">
                 <div class="line"></div>
@@ -34,10 +34,13 @@
         </nav>
     </header>
     <main>
-        <h1>Try our quiz here</h1>
+        <p class="introTekst">How much do you know about picking herbs in the Danish nature? Test your knowledge.
+            Try our quiz here.</p>
         <div class="quiz_container">
             <form id="quiz_form">
                 <div class="quiz_group">
+                    <h3 class="question">Question 1</h3>
+                    <br>
                     <label for="question1">When is the best time to harvest herbs to get fresh and flavorful
                         leaves?</label>
                     <select id="question1" name="question1" required>
@@ -50,6 +53,8 @@
                 </div>
 
                 <div class="quiz_group">
+                    <h3 class="question">Question 2</h3>
+                    <br>
                     <label for="question2">What equipment is recommended for harvesting herbs?</label>
                     <select id="question2" name="question2" required>
                         <option value="">Select an answer</option>
@@ -61,6 +66,8 @@
                 </div>
 
                 <div class="quiz_group">
+                    <h3 class="question">Question 3</h3>
+                    <br>
                     <label for="question3">What is the recommended way to harvest herbs to ensure the plant can produce
                         new
                         shoots and survive?</label>
@@ -74,6 +81,8 @@
                 </div>
 
                 <div class="quiz_group">
+                    <h3 class="question">Question 4</h3>
+                    <br>
                     <label for="question4">How should herbs be cleaned when you return from harvesting?</label>
                     <select id="question4" name="question4" required>
                         <option value="">Select an answer</option>
@@ -86,6 +95,8 @@
                 </div>
 
                 <div class="quiz_group">
+                    <h3 class="question">Question 5</h3>
+                    <br>
                     <label for="question5">What should you be mindful of when making sure not to harvest toxic
                         plants?</label>
                     <select id="question5" name="question5" required>

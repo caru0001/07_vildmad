@@ -1,3 +1,7 @@
+main {
+  margin: 50px;
+}
+
 @font-face {
   font-family: karla;
   src: url(../fonts/Karla-Regular.ttf);
@@ -16,6 +20,14 @@
 .quiz_group {
   margin-bottom: 15px;
   color: #0a2c05;
+  background-color: rgb(10, 44, 5, 0.12);
+  padding: 20px;
+  border-radius: 20px;
+  max-width: 700px;
+}
+
+.question {
+  font-size: 20px;
 }
 
 label {
@@ -35,15 +47,18 @@ select {
   font-family: "quickReg";
 }
 
-button {
-  background-color: #fffcf4;
-  color: #0a2c05;
-  padding: 10px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
+button:hover {
+  background-color: rgb(138, 90, 58, 0.38);
 }
 
-button:hover {
-  background-color: #45a049;
+button {
+  background-color: #fffcf4;
+  font-family: "karla";
+  text-decoration: none;
+  font-size: 26px;
+  border-radius: 50px;
+  padding: 10px 45px;
+  color: #0a2c05;
+   cursor: pointer;
+   border: none;
 }
