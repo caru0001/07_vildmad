@@ -58,6 +58,7 @@
   .introTekst {
     margin-top: 20%;
     margin-left: 20%;
+    grid-row: 1/2;
   }
 
   #bgCirkel {
@@ -70,37 +71,70 @@
   #bgFirkant {
     background-color: rgb(138, 90, 58, 0.38);
     margin-left: 10%;
+    margin-bottom: 10%;
     grid-column: 1/2;
     grid-row: 3/4;
   }
 
   .h2_produktside_rød {
     text-align: center;
+    padding-top: 3rem;
   }
   .h2_produktside_grøn {
     text-align: center;
+    padding-top: 3rem;
   }
 
   .rødTekst {
     color: #5b1419;
     max-width: 520px;
-    display: flex;
-    top: auto;
-    position: absolute;
+    margin-top: 10%;
   }
 
   .grønTekst {
     max-width: 520px;
-    position: absolute;
+    margin-top: 10%;
     margin-left: 10%;
   }
 
-  ul li {
+  #area {
     margin-left: 10%;
+    margin-top: 5%;
+    color: #0a2c05;
+    font-size: 18px;
+    padding-bottom: 2rem;
   }
 
   .planteIconer {
-    position: absolute;
     max-width: 420px;
+  }
+
+  #herb1 {
+    position: absolute;
+    top: 120%;
+    left: 45%;
+    rotate: 45deg;
+  }
+  #herb2 {
+    position: absolute;
+    top: 235%;
+    left: 35%;
+    rotate: 90deg;
+  }
+
+  #sti1 {
+    display: grid;
+    grid-column: 1/2;
+    grid-row: 2/3;
+    margin-top: 10%;
+    rotate: 90deg;
+  }
+  #sti2 {
+    display: grid;
+    grid-column: 2/3;
+    grid-row: 3/4;
+    margin-top: -15%;
+
+    rotate: -20deg;
   }
 }
