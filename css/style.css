@@ -1,43 +1,42 @@
 footer {
-    background-color: #497d41;
-    color: white;
+  background-color: #497d41;
+  color: white;
 }
 footer {
-    padding: 2em;
-    font-size: calc(10px + 0.390625vw);
-  }
-
-@font-face {
-    font-family: karla;
-    src: url(../fonts/Karla-Regular.ttf);
+  padding: 2em;
+  font-size: calc(10px + 0.390625vw);
 }
 
 @font-face {
-    font-family: quicksand;
-    src: url(../fonts/Quicksand-Regular.ttf);
+  font-family: karla;
+  src: url(../fonts/Karla-Regular.ttf);
 }
 
+@font-face {
+  font-family: quicksand;
+  src: url(../fonts/Quicksand-Regular.ttf);
+}
 
 @media screen and (min-width: 700px) {
-.footer-grid {
-        display: block;
+  .footer-grid {
+    display: block;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 0em;
     object-fit: contain;
   }
 
- /** desktop for header and footer **/
- 
-    footer img {
-      max-width: 60px;
-      width: fit-content;
-      height: fit-content;
-    }
+  /** desktop for header and footer **/
+
+  footer img {
+    max-width: 60px;
+    width: fit-content;
+    height: fit-content;
   }
+}
 
 @media screen and (max-width: 700px) {
-          /* Footer */
+  /* Footer */
   footer > img {
     display: block;
     min-width: 70px;
@@ -46,26 +45,26 @@ footer {
     padding: 1em;
     object-fit: fill;
   }
-    .footer-grid {
-      display: block; /* Ændrer layout til blokvisning */
-    }
-    .footerhours {
-      text-align: center; /* Justerer tekst til midten */
-    }
-    footer img {
-      max-width: 50px; /* Justerer billedstørrelse */
-    }
-  
-  
+  .footer-grid {
+    display: block; /* Ændrer layout til blokvisning */
+  }
+  .footerhours {
+    text-align: center; /* Justerer tekst til midten */
+  }
+  footer img {
+    max-width: 50px; /* Justerer billedstørrelse */
+  }
+
   .footer-grid {
     display: flex;
     flex-wrap: wrap;
   }
-  
+
   .footer-grid div {
     flex: 1 0 50%; /* Del elementerne i to kolonner */
   }
-}body {
+}
+body {
   background-color: #b8c198;
 }
 
@@ -109,6 +108,8 @@ p {
 }
 
 .introTekst {
+  font-family: "quickReg";
   font-size: 36px;
   max-width: 720px;
+  color: #0A2C05;
 }
