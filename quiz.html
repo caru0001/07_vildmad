@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/quiz.css">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul class="menu">
+                <li><a href="produkt.html">HERBS</a></li>
+                <li><a href="#">RECIPES</a></li>
+                <li><a href="#">ABOUT</a></li>
+            </ul>
+            <div class="burger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <h1>Try our quiz here</h1>
+        <div class="quiz_container">
+            <form id="quiz_form">
+                <div class="quiz_group">
+                    <label for="question1">When is the best time to harvest herbs to get fresh and flavorful
+                        leaves?</label>
+                    <select id="question1" name="question1" required>
+                        <option value="">Select an answer</option>
+                        <option value="a">After flowering</option>
+                        <option value="b">When the herb starts producing flowers</option>
+                        <option value="c">Early on, when the herb sets fresh leaves</option>
+                        <option value="d">When the herb has matured seeds</option>
+                    </select>
+                </div>
+
+                <div class="quiz_group">
+                    <label for="question2">What equipment is recommended for harvesting herbs?</label>
+                    <select id="question2" name="question2" required>
+                        <option value="">Select an answer</option>
+                        <option value="a">Shovel and watering can</option>
+                        <option value="b">Gloves, herb knife/scissors, and containers with lids</option>
+                        <option value="c">Bare hands only</option>
+                        <option value="d">A large basket only</option>
+                    </select>
+                </div>
+
+                <div class="quiz_group">
+                    <label for="question3">What is the recommended way to harvest herbs to ensure the plant can produce
+                        new
+                        shoots and survive?</label>
+                    <select id="question3" name="question3" required>
+                        <option value="">Select an answer</option>
+                        <option value="a">Pull the plant up with the root</option>
+                        <option value="b">Cut the stem just above the ground</option>
+                        <option value="c">Pick the leaves with hands</option>
+                        <option value="d">Pull up the plant with the root and pick the leaves later</option>
+                    </select>
+                </div>
+
+                <div class="quiz_group">
+                    <label for="question4">How should herbs be cleaned when you return from harvesting?</label>
+                    <select id="question4" name="question4" required>
+                        <option value="">Select an answer</option>
+                        <option value="a">Only by rinsing them in running water</option>
+                        <option value="b">In cold water, ideally in a salad spinner or under running water in a colander
+                        </option>
+                        <option value="c">In hot soapy water</option>
+                        <option value="d">Let them air dry without cleaning</option>
+                    </select>
+                </div>
+
+                <div class="quiz_group">
+                    <label for="question5">What should you be mindful of when making sure not to harvest toxic
+                        plants?</label>
+                    <select id="question5" name="question5" required>
+                        <option value="">Select an answer</option>
+                        <option value="a">No need to worry about toxic plants</option>
+                        <option value="b">Specifically avoid plants from the carrot family</option>
+                        <option value="c">Harvest all plants as they are all edible</option>
+                        <option value="d">Use gloves to avoid contact with toxic plants</option>
+                    </select>
+                </div>
+
+                <button type="button" onclick="submitQuiz()">Submit Quiz</button>
+            </form>
+        </div>
+
+    </main>
+    <footer></footer>
+    <script src="js/menu.js"></script>
+    <script src="js/quiz.js"></script>
+</body>
+
+</html>
