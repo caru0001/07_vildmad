@@ -134,7 +134,19 @@
     grid-column: 2/3;
     grid-row: 3/4;
     margin-top: -15%;
-
     rotate: -20deg;
+  }
+
+  #test {
+    margin: 5rem;
+  }
+  #quizbtn {
+    background-color: #fffcf4;
+    color: #5b1419;
+    padding-top: 2.5rem;
+    border-radius: 90%;
+    text-align: center;
+    width: 150px;
+    height: 100px;
   }
 }
