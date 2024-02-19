@@ -24,6 +24,19 @@
     grid-template-columns: 1fr 1fr;
     gap: 1rem;
   }
+  .grid1_2 {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 1rem;
+  }
+  .grid1_1row1_1_1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    grid-template-rows: 1fr 1fr 1fr;
+    row-gap: 1rem;
+    margin-top: 5%;
+  }
 
   #cirkelBg {
     position: absolute;
@@ -32,19 +45,33 @@
     position: absolute;
   }
   #positionAfPUrtebillede {
-    margin-top: -50%;
-    margin-left: 15%;
+    margin-top: -60%;
+    margin-left: 20%;
   }
 
   h1 {
     font-size: 48px;
-    margin-top: -10%;
-    margin-left: -10%;
+    margin-top: -7%;
+    margin-left: 10%;
   }
 
   .introTekst {
     margin-top: 20%;
     margin-left: 20%;
+  }
+
+  #bgCirkel {
+    background-color: rgb(10, 44, 5, 0.12);
+    border-radius: 100%;
+    margin-right: 10%;
+    grid-column: 2/3;
+    grid-row: 2/3;
+  }
+  #bgFirkant {
+    background-color: rgb(138, 90, 58, 0.38);
+    margin-left: 10%;
+    grid-column: 1/2;
+    grid-row: 3/4;
   }
 
   .h2_produktside_rød {
@@ -68,7 +95,12 @@
     margin-left: 10%;
   }
 
+  ul li {
+    margin-left: 10%;
+  }
+
   .planteIconer {
+    position: absolute;
     max-width: 420px;
   }
 }
