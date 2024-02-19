@@ -72,6 +72,8 @@
     margin-left: 10%;
     grid-column: 1/2;
     grid-row: 3/4;
+    display: grid;
+    grid-column: 1fr;
   }
 
   .h2_produktside_rød {
