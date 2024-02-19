@@ -42,4 +42,5 @@ p {
 
 .introTekst {
   font-size: 36px;
+  max-width: 720px;
 }

@@ -38,6 +38,13 @@
 
   h1 {
     font-size: 48px;
+    margin-top: -10%;
+    margin-left: -10%;
+  }
+
+  .introTekst {
+    margin-top: 20%;
+    margin-left: 20%;
   }
 
   .h2_produktside_rød {
@@ -52,9 +59,16 @@
     max-width: 520px;
     display: flex;
     top: auto;
+    position: absolute;
   }
 
   .grønTekst {
     max-width: 520px;
+    position: absolute;
+    margin-left: 10%;
+  }
+
+  .planteIconer {
+    max-width: 420px;
   }
 }
