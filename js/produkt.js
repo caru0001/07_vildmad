@@ -26,11 +26,10 @@ function showData(item) {
 
   copy.querySelector(".introTekst").textContent = item.introduction;
 
-  copy.querySelector(".looksLike p").textContent = item.look_description;
+  copy.querySelector(".rødTekst").textContent = item.look_description;
 
-  copy.querySelector(".findHere p").textContent = item.area_description;
+  copy.querySelector(".grønTekst").textContent = item.area_description;
 
-  /*  copy.querySelector("#area0").textContent = item.area / 0; */
 
   /* append */
   document.querySelector("main").appendChild(copy);
