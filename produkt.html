@@ -4,81 +4,116 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="robots" content="noindex" />
+
     <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/produkt.css" />
     <link rel="stylesheet" href="css/menu.css" />
+    <link rel="stylesheet" href="css/produkt.css" />
+
     <title>Produktside</title>
-      
-    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
-    <link rel="manifest" href="favicon/site.webmanifest">
-</head>
+
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="favicon/site.webmanifest" />
+  </head>
   <body>
-    <header>
-      <nav>
-        <ul class="menu">
-          <li><a href="produkt.html">HERBS</a></li>
-          <li><a href="#">RECIPES</a></li>
-          <li><a href="#">ABOUT</a></li>
-        </ul>
-        <div class="burger">
-          <div class="line"></div>
-          <div class="line"></div>
-          <div class="line"></div>
-        </div>
-      </nav>
-    </header>
-
+    <header></header>
     <main>
-      <template class="grid1_1" id="produktTemplate">
-        <section>
-          <div>
-            <img src="img/BgCirkel.webp" alt="Baggrund til urt" />
-            <img id="UrtPåCirkel" src="" alt="billede af urt" />
-          </div>
-          <h1></h1>
-        </section>
+      <img src="img/prudukt/produktbillede.webp" alt="top billede" />
+      <!--   <template class="grid1_1" id="produktTemplate"> -->
+      <section class="grid1_2">
+        <div id="positionAfPUrtebillede">
+          <img id="cirkelBg" src="img/prudukt/Cirkel.webp" alt="cirkelBg" />
+          <img
+            id="urtPåCirkel"
+            src="img/herbs/Alm-syre.webp"
+            alt="billede af urt"
+          />
+        </div>
+        <h1>Urt</h1>
+      </section>
 
+      <section class="grid1_1row1_1_1">
         <div>
-          <p class="introTekst"></p>
+          <p class="introTekst">
+            Watercress is a sharp-tasting herb that grows abundantly alongside
+            streams and creeks. It has been used in cooking for centuries;
+            watercress soup, for example, is a classic in many cuisines.
+          </p>
         </div>
 
-        <article class="looksLike">
+        <div id="herb1">
+          <img
+            class="planteIconer"
+            src="img/urte_ikon_1.webp"
+            alt="urte_ikon_1"
+          />
+        </div>
+
+        <div id="sti1">
+          <img src="img/prudukt/sti1.webp" alt="sti1">
+        </div>
+
+        <article id="bgCirkel">
           <div>
-            <img src="" alt="" />
+            <h2 class="h2_produktside_rød">How it looks</h2>
+            <p class="rødTekst">
+              Watercress can grow 40-60 cm high and has hollow, succulent stems.
+              The leaves are oval-shaped and look like small water lilies. They
+              grow in pairs on side shoots off the main stem and end in a single
+              round leaf. Smooth all over, the plant develops small, white
+              flowers that are yellowish-green in the center.
+            </p>
           </div>
-          <h2 class="h2_produktside_rød">How it looks</h2>
-          <p></p>
         </article>
 
-        <article class="findHere">
-          <h2 class="h2_produktside_grøn">Find it here</h2>
-          <p></p>
+        <article id="bgFirkant">
+          <div>
+            <h2 class="h2_produktside_grøn">Find it here</h2>
+            <p class="grønTekst">
+              Watercress can be found in and around streams, lakes, and creeks
+              that have a good flow of clear water. It can grow on the banks or
+              in the water itself (though in that case, part of the plant will
+              be hidden). Take care not to pick watercress in streams where
+              cattle or sheep graze nearby, as infected animals can transmit a
+              liver fluke parasite to humans.
+            </p>
 
-          <div class="grid1_1">
-            <ul>
-              <li id="area0"></li>
-              <li id="area1"></li>
-              <li id="area2"></li>
-              <li id="area3"></li>
-              <li id="area4"></li>
-              <li id="area5"></li>
-              <li id="area6"></li>
-              <li id="area7"></li>
-              <li id="area8"></li>
-              <li id="area9"></li>
-            </ul>
-
-            <div>
-              <img src="" alt="" />
+            <div id="area">
+              <p ><em>Fence, Town, ..</em></p>
             </div>
           </div>
         </article>
-      </template>
+
+        <div id="herb2">
+          <img
+            class="planteIconer"
+            src="img/urte_ikon_2.webp"
+            alt="urte_ikon_2"
+          />
+        </div>
+
+        <div id="sti2">
+          <img src="img/prudukt/sti2.webp" alt="sti2">
+        </div>
+      </section>
+      <!--       </template> -->
     </main>
     <footer></footer>
-    <script src="js/menu.js"></script>
   </body>
   <script src="js/main.js"></script>
 </html>
