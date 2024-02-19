@@ -15,18 +15,18 @@ function showData(item) {
   console.log(item);
 
   /* fanger template */
-  const template = document.querySelector("#produktTemplate").textContent;
+  const template = document.querySelector("#produktTemplate").content;
 
   /* lav en kopi */
   const copy = template.cloneNode(true);
 
   /* ændre indhold i template */
-  copy.querySelector("#UrtPåCirkel").src = `img/herbs/${item.urtImg}`;
+  copy.querySelector("#urtPåCirkel").src = `img/herbs/${item.urtImg}`;
   copy.querySelector("h1").textContent = item.name;
 
   copy.querySelector(".introTekst").textContent = item.introduction;
 
-  copy.querySelector(".looksLike p").textContent = item.lokk_description;
+  copy.querySelector(".looksLike p").textContent = item.look_description;
 
   copy.querySelector(".findHere p").textContent = item.area_description;
 
