@@ -1,7 +1,9 @@
-const urlParms = new URLSearchParams(window.location.search);
-const season = urlParms.get("season");
+/* const urlParms = new URLSearchParams(window.location.search);
+const season = urlParms.get("season"); */
 
-fetch(`https://pliavlkcgnwhouapeprm.supabase.co/rest/v1/vildmad_data?season=eq.${season}`, {
+/* `https://pliavlkcgnwhouapeprm.supabase.co/rest/v1/vildmad_data?season=eq.${season}` */
+
+fetch("https://pliavlkcgnwhouapeprm.supabase.co/rest/v1/vildmad_data", {
   method: "GET",
   headers: {
     apikey:
@@ -25,9 +27,9 @@ function showHerb(item) {
   const copy = template.cloneNode(true);
 
   /* ændre indhold i template */
-  copy.querySelector("img").src = `img/herbs/${item[0].urtImg}`;
-  copy.querySelector("h3").textContent = item[0].name;
-  copy.querySelector("a").href = `produkt.html?id=${item[0].id}`;
+  copy.querySelector("img").src = `img/herbs/${item.urtImg}`;
+  copy.querySelector("h3").textContent = item.name;
+  copy.querySelector("a").href = `produkt.html?id=${item.id}`;
 
   /* append */
   document.querySelector(".herbs_grid").appendChild(copy);
