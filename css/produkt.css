@@ -69,12 +69,15 @@
   #bgCirkel {
     background-color: rgb(10, 44, 5, 0.12);
     border-radius: 100%;
+    margin-top: -30%;
+    margin-bottom: 30%;
     margin-right: 10%;
     grid-column: 2/3;
     grid-row: 2/3;
   }
   #bgFirkant {
     background-color: rgb(138, 90, 58, 0.38);
+    margin-top: -10%;
     margin-left: 10%;
     margin-bottom: 10%;
     grid-column: 1/2;
@@ -83,11 +86,11 @@
 
   .h2_produktside_rød {
     text-align: center;
-    padding-top: 3rem;
+    padding-top: 5rem;
   }
   .h2_produktside_grøn {
     text-align: center;
-    padding-top: 3rem;
+    padding-top: 5rem;
   }
 
   .rødTekst {
@@ -116,36 +119,44 @@
 
   #herb1 {
     position: absolute;
-    top: 120%;
+    top: 110%;
     left: 45%;
     rotate: 45deg;
   }
   #herb2 {
     position: absolute;
-    top: 235%;
+    top: 245%;
     left: 35%;
     rotate: 90deg;
   }
 
-  #sti1 {
+  .sti1 {
     display: grid;
     grid-column: 1/2;
     grid-row: 2/3;
-    margin-top: 10%;
-    rotate: 90deg;
+    rotate: 60deg;
   }
-  #sti2 {
+
+  .sti2 {
     display: grid;
     grid-column: 2/3;
     grid-row: 3/4;
-    margin-top: -15%;
-    rotate: -20deg;
+    margin-top: -50%;
+    margin-left: 10%;
+    rotate: -40deg;
   }
 
   #test {
     margin: 5rem;
   }
 
+  #posbtn{
+    display: flex;
+  }
+
+  #posbtn div{
+padding-top: 5%;
+  }
   #quizbtn:hover {
     background-color: rgb(138, 90, 58, 0.38);
   }
@@ -160,6 +171,7 @@
     cursor: pointer;
     border: none;
     text-align: center;
+  
   }
 }
 
@@ -319,7 +331,6 @@
 }
  */
 
- 
 /* ------------------------- MOBIL ------------------------ */
 @media (max-width: 700px) {
   #topBillede {
