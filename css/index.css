@@ -59,3 +59,9 @@ main {
   padding: 10px 45px;
   color: #0a2c05;
 }
+
+.app_icon {
+  width: 120px;
+  margin-top: 15px;
+  margin-right: 5px;
+}
