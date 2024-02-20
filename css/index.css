@@ -2,18 +2,6 @@ main {
   margin: 50px;
 }
 
-.app_grid {
-  display: flex;
-  gap: 10px;
-  align-content: center;
-  margin: 0 auto;
-  align-items: center;
-  justify-content: space-around;
-  max-width: 1200px;
-  margin-right: 50px;
-  margin-top: -20px;
-}
-
 .mobile img {
   width: 380px;
 }
@@ -22,17 +10,19 @@ main {
   background-color: rgb(138, 90, 58, 0.38);
   padding: 30px;
   max-width: 350px;
-}
-
-.path img {
-  width: 380px;
-  margin-right: 70px;
-  margin-left: -60px;
+  margin-bottom: 50px;
 }
 
 .index_h2 {
   max-width: 720px;
   margin-bottom: 40px;
+}
+
+.path1 img {
+  width: 250px;
+  margin-bottom: 40px;
+  margin-left: 50px;
+  margin-top: -30px;
 }
 
 .seasons_grid {
@@ -105,4 +95,34 @@ main {
   width: 380px;
   margin-left: -100px;
   margin-right: -100px;
+}
+
+@media (min-width: 1000px) {
+  .app_grid {
+    display: flex;
+    gap: 10px;
+    align-content: center;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: space-around;
+    max-width: 1200px;
+    margin-right: 50px;
+    margin-top: -20px;
+  }
+
+  .path img {
+    width: 380px;
+    margin-right: 70px;
+    margin-left: -60px;
+  }
+
+  .path1 img {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .path img {
+    display: none;
+  }
 }
