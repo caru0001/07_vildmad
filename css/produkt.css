@@ -265,15 +265,18 @@
   }
 
   #test {
-font-size: 20px;
+    display: none;
   }
   #quizbtn {
     background-color: #fffcf4;
-    color: #5b1419;
-    padding-top: 2.5rem;
-    border-radius: 90%;
+    font-family: "karla";
+    text-decoration: none;
+    font-size: 26px;
+    border-radius: 50px;
+    padding: 10px 45px;
+    color: #0a2c05;
+    cursor: pointer;
+    border: none;
     text-align: center;
-    width: 150px;
-    height: 100px;
   }
 }
