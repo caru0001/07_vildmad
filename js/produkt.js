@@ -21,7 +21,8 @@ function showData(item) {
   const copy = template.cloneNode(true);
 
   /* ændre indhold i template */
-  copy.querySelector("img").src = `img/herbs/${item.urtImg}`;
+  copy.querySelector("#urtPåCirkel").src = `img/herbs/${item.urtImg}`;
+
   copy.querySelector("h1").textContent = item.name;
 
   copy.querySelector(".introTekst").textContent = item.introduction;
@@ -29,6 +30,8 @@ function showData(item) {
   copy.querySelector(".rødTekst").textContent = item.look_description;
 
   copy.querySelector(".grønTekst").textContent = item.area_description;
+
+  copy.querySelector("#area").textContent = item.areas;
 
   /* append */
   document.querySelector("main").appendChild(copy);
