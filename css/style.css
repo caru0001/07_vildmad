@@ -1,5 +1,7 @@
 body {
   background-color: #b8c198;
+  background-image: url("../img/prudukt/herb.webp");
+  background-size:cover;
 }
 
 @font-face {
