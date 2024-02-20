@@ -9,7 +9,7 @@ function submitQuiz() {
   var answer4 = document.getElementById("question4").value;
   var answer5 = document.getElementById("question5").value;
 
-  // Evaluate answers and calculate score
+  // Aflæser svar og udregner ens score (korrekste svar giver 1 point, alle andre svar giver 0 point)
   var score = 0;
 
   if (answer1 === "c") {
@@ -28,6 +28,6 @@ function submitQuiz() {
     score += 1;
   }
 
-  // Display results or send data to the server
+  // Giver en pop-up alert, som fortæller dig din score
   alert("Quiz completed!\nYour score: " + score + "/5");
 }
