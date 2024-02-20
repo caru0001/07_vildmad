@@ -1,7 +1,4 @@
-$(document).ready(function () {
-  $(".custom_select").select2();
-});
-
+//Definerer variabler, som taler sammen med class for hvert spørgsmål
 function submitQuiz() {
   var answer1 = document.getElementById("question1").value;
   var answer2 = document.getElementById("question2").value;
@@ -9,7 +6,7 @@ function submitQuiz() {
   var answer4 = document.getElementById("question4").value;
   var answer5 = document.getElementById("question5").value;
 
-  // Aflæser svar og udregner ens score (korrekste svar giver 1 point, alle andre svar giver 0 point)
+  // Aflæser svar og udregner ens score (korrekte svar giver 1 point, alle andre svar giver 0 point)
   var score = 0;
 
   if (answer1 === "c") {
