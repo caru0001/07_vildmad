@@ -16,7 +16,12 @@ for (var i = 0; i < pathArray.length; i++) {
 
 document.getElementById("breadcrumbs").innerHTML = breadcrumbs;
 
-if (pathArray.length > 1) {
-  // Generer brødkrummestien kun hvis der er mere end 1 element i pathArray
-  // Din eksisterende brødkrummesti-genereringskode her
-}
+// Tilføj en klasse til det aktuelle brødkrummelink
+var currentPath = window.location.pathname;
+var breadcrumbLinks = document.querySelectorAll("#breadcrumbs a");
+
+breadcrumbLinks.forEach(function (link) {
+  if (link.getAttribute("href") === currentPath) {
+    link.classList.add("current-page");
+  }
+});
