@@ -15,3 +15,8 @@ for (var i = 0; i < pathArray.length; i++) {
 }
 
 document.getElementById("breadcrumbs").innerHTML = breadcrumbs;
+
+if (pathArray.length > 1) {
+  // Generer brødkrummestien kun hvis der er mere end 1 element i pathArray
+  // Din eksisterende brødkrummesti-genereringskode her
+}
