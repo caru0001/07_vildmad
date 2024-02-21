@@ -1,14 +1,131 @@
-.introTekst {
-  font-family: sans-serif; /* skal skiftes ud HUSK!! */
-  font-size: 36px;
-  color: #0a2c05;
-}
 .h2_produktside_rød {
   font-size: 36px;
   color: #5b1419;
 }
 
+.herb_grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-bottom: 40px;
+}
+
+#urtPåCirkel {
+  max-width: 100%;
+  width: 270px;
+  height: 270px;
+  border-radius: 50%;
+  background-color: rgba(255, 252, 244, 0.85);
+}
+
+.herb_grid div {
+  display: grid;
+  flex-direction: column;
+  align-items: center;
+}
+
+.herb_grid h1 {
+  align-self: center;
+  margin-left: -45%;
+  color: #0a2c05;
+}
+
+.herb_description_grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  margin-bottom: 40px;
+}
+
+.sti_ned img {
+  width: 180px;
+  margin-left: 130px;
+  margin-top: -40px;
+}
+
+#bgFirkant {
+  background-color: rgb(138, 90, 58, 0.38);
+  padding: 40px;
+  max-width: 500px;
+  margin-left: 40px;
+  margin-bottom: 60px;
+  position: relative;
+  padding-bottom: 70px;
+}
+
+#bgCirkel {
+  background-color: rgb(10, 44, 5, 0.12);
+  border-radius: 20%;
+  padding: 50px;
+  padding-bottom: 70px;
+  position: relative;
+}
+
+.left_side {
+  margin-right: 20px;
+}
+
+.right_side {
+  margin-top: 55px;
+}
+
+.quiz_text_product {
+  max-width: 300px;
+  background-color: rgb(10, 44, 5, 0.12);
+  padding: 30px;
+  border-radius: 50px;
+}
+
+.grønTekst {
+  max-width: 520px;
+}
+
+.introTekst {
+  max-width: 580px;
+}
+
+.h2_produktside {
+  text-align: center;
+  font-size: 30px;
+}
+
+.planteIconer {
+  max-width: 250px;
+}
+
+#herb2 {
+  rotate: 90deg;
+  position: absolute;
+  top: 65%;
+  left: 55%;
+}
+
+.rødTekst {
+  color: #5b1419;
+  max-width: 350px;
+}
+
+.rød_h2 {
+  color: #5b1419;
+}
+
+.sti2 {
+  position: absolute;
+  top: 125%;
+  left: 44%;
+}
+
+.sti2 img {
+  width: 350px;
+}
+
+#herb1 {
+  position: absolute;
+  top: 70%;
+  left: 55%;
+  rotate: 25deg;
+}
+
 /* ------------------------- WEB ------------------------ */
+/*
 @media (min-width: 700px) {
   .h2_produktside_grøn {
     font-size: 36px;
@@ -24,6 +141,7 @@
     grid-template-columns: 1fr 1fr;
     gap: 1rem;
   }
+  
   .grid1_2 {
     display: grid;
     grid-template-columns: 1fr 2fr;
@@ -46,9 +164,7 @@
   #cirkelBg {
     position: absolute;
   }
-  #urtPåCirkel {
-    position: absolute;
-  }
+
   #positionAfPUrtebillede {
     margin-top: -60%;
     margin-left: 20%;
@@ -175,169 +291,11 @@
     text-align: center;
   }
 }
-
-/* /* ------------------------- IPAD ------------------------ */
-/* @media (max-width: 800px) {
-  #topBillede {
-    display: none;
-  }
-
-  .h2_produktside_grøn {
-    font-size: 36px;
-    color: #0a2c05;
-  }
-  .h2_produktside_rød {
-    font-size: 36px;
-    color: #5b1419;
-  }
-
-  .grid1_1 {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 1rem;
-  }
-  .grid1_2 {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    gap: 1rem;
-  }
-  .grid2_1 {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    gap: 1rem;
-  }
-  .grid1_1row1_1_1 {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 1rem;
-    grid-template-rows: 1fr 1fr 1fr;
-    row-gap: 1rem;
-    margin-top: 5%;
-  }
-
-  #cirkelBg {
-    max-width: 50%;
-    position: absolute;
-  }
-  #urtPåCirkel {
-    max-width: 60%;
-    position: absolute;
-    left: 0;
-  }
-  #positionAfPUrtebillede {
-    margin-top: 15%;
-    margin-left: 5%;
-  }
-
-  h1 {
-    font-size: 60px;
-    padding-top: 60%;
-    margin-left: 30%;
-  }
-
-  .introTekst {
-    margin-top: 20%;
-    margin-left: 20%;
-    grid-row: 1/2;
-  }
-
-  #bgCirkel {
-    background-color: rgb(10, 44, 5, 0.12);
-    border-radius: 100%;
-    margin-right: 10%;
-    grid-column: 2/3;
-    grid-row: 2/3;
-  }
-  #bgFirkant {
-    background-color: rgb(138, 90, 58, 0.38);
-    margin-left: 10%;
-    margin-bottom: 10%;
-    grid-column: 1/2;
-    grid-row: 3/4;
-  }
-
-  .h2_produktside_rød {
-    text-align: center;
-    padding-top: 3rem;
-  }
-  .h2_produktside_grøn {
-    text-align: center;
-    padding-top: 3rem;
-  }
-
-  .rødTekst {
-    color: #5b1419;
-    max-width: 520px;
-    margin-top: 10%;
-  }
-
-  .grønTekst {
-    max-width: 520px;
-    margin-top: 10%;
-    margin-left: 10%;
-  }
-
-  #area {
-    margin-left: 10%;
-    margin-top: 5%;
-    color: #0a2c05;
-    font-size: 18px;
-    padding-bottom: 2rem;
-  }
-
-  .planteIconer {
-    max-width: 420px;
-  }
-
-  #herb1 {
-    display: none;
-  }
-  #herb2 {
-    display: none;
-  }
-
-  #sti1 {
-    display: grid;
-    grid-column: 1/2;
-    grid-row: 2/3;
-    margin-top: 10%;
-    rotate: 90deg;
-  }
-  #sti2 {
-    display: grid;
-    grid-column: 2/3;
-    grid-row: 3/4;
-    margin-top: -15%;
-    rotate: -20deg;
-  }
-
-  #test {
-    margin: 5rem;
-  }
-  #quizbtn:hover {
-    background-color: rgb(138, 90, 58, 0.38);
-  }
-  #quizbtn {
-    background-color: #fffcf4;
-    font-family: "karla";
-    text-decoration: none;
-    font-size: 26px;
-    border-radius: 50px;
-    padding: 10px 45px;
-    color: #0a2c05;
-    cursor: pointer;
-    border: none;
-    text-align: center;
-  }
-}
- */
+*/
 
 /* ------------------------- MOBIL ------------------------ */
+/* 
 @media (max-width: 700px) {
-  #topBillede {
-    display: none;
-  }
-
   #cirkelBg {
     max-width: 50%;
     position: absolute;
@@ -466,3 +424,5 @@
     text-align: center;
   }
 }
+
+*/

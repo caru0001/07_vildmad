@@ -1,111 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="robots" content="noindex" />
 
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/menu.css" />
-    <link rel="stylesheet" href="css/produkt.css" />
-    <link rel="stylesheet" href="css/footer.css" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="noindex" />
 
-    <title>Produktside</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/menu.css" />
+  <link rel="stylesheet" href="css/produkt.css" />
+  <link rel="stylesheet" href="css/footer.css" />
+  <link rel="stylesheet" href="css/index.css">
 
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="favicon/apple-touch-icon.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="favicon/favicon-32x32.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="favicon/favicon-16x16.png"
-    />
-    <link rel="manifest" href="favicon/site.webmanifest" />
-  </head>
-  <body>
-    <header>
-      <div class="logo">
-        <a href="index.html"><img src="img/logo.webp" alt="logo" /></a>
+  <title>Herb</title>
+
+  <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png" />
+  <link rel="manifest" href="favicon/site.webmanifest" />
+</head>
+
+<body>
+  <header>
+    <div class="logo">
+      <a href="index.html"><img src="img/logo.webp" alt="logo" /></a>
+    </div>
+    <nav>
+      <ul class="menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="produktliste.html">Herbs</a></li>
+        <li><a href="quiz.html">Quiz</a></li>
+      </ul>
+      <div class="burger">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
       </div>
-      <nav>
-        <ul class="menu">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="produktliste.html">Herbs</a></li>
-          <li><a href="quiz.html">Quiz</a></li>
-        </ul>
-        <div class="burger">
-          <div class="line"></div>
-          <div class="line"></div>
-          <div class="line"></div>
-        </div>
-      </nav>
-    </header>
-    <main>
-      <img
-        id="topBillede"
-        src="img/prudukt/produktbillede.webp"
-        alt="top billede"
-      />
+    </nav>
+  </header>
+  <main>
+    <template id="produktTemplate">
 
-         <template class="grid1_1" id="produktTemplate">
-      <section class="grid1_2">
-        <div id="positionAfPUrtebillede">
-          <img id="cirkelBg" src="img/prudukt/Cirkel.webp" alt="cirkelBg" />
-          <img
-            id="urtPåCirkel"
-            src="img/herbs/Alm-syre.webp"
-            alt="billede af urt"
-          />
-        </div>
-        <h1>Urt</h1>
-      </section>
-
-      <section class="grid1_1row1_1_1">
+      <div class="herb_grid">
         <div>
-          <p class="introTekst">
-            Watercress is a sharp-tasting herb that grows abundantly alongside
-            streams and creeks. It has been used in cooking for centuries;
-            watercress soup, for example, is a classic in many cuisines.
-          </p>
+          <img id="urtPåCirkel" src="img/herbs/Alm-syre.webp" alt="" />
         </div>
-
-        <div id="herb1">
-          <img
-            class="planteIconer"
-            src="img/urte_ikon_1.webp"
-            alt="urte_ikon_1"
-          />
+        <div>
+          <h1>Urt Placeholder</h1>
         </div>
+      </div>
 
-        <div class="sti1">
-          <img id="sti1" src="img/prudukt/sti1.webp" alt="sti1" />
-        </div>
-
-        <article id="bgCirkel">
+      <div class="herb_description_grid">
+        <div class="left_side">
           <div>
-            <h2 class="h2_produktside_rød">How it looks</h2>
-            <p class="rødTekst">
-              Watercress can grow 40-60 cm high and has hollow, succulent stems.
-              The leaves are oval-shaped and look like small water lilies. They
-              grow in pairs on side shoots off the main stem and end in a single
-              round leaf. Smooth all over, the plant develops small, white
-              flowers that are yellowish-green in the center.
+            <p class="introTekst">
+              Watercress is a sharp-tasting herb that grows abundantly alongside
+              streams and creeks. It has been used in cooking for centuries;
+              watercress soup, for example, is a classic in many cuisines.
             </p>
           </div>
-        </article>
-
-        <article id="bgFirkant">
-          <div>
-            <h2 class="h2_produktside_grøn">Find it here</h2>
+          <div class="sti_ned">
+            <img src="img/path_down.webp" alt="" />
+          </div>
+          <article id="bgFirkant">
+            <h2 class="h2_produktside">Find It Here</h2>
             <p class="grønTekst">
               Watercress can be found in and around streams, lakes, and creeks
               that have a good flow of clear water. It can grow on the banks or
@@ -114,72 +72,73 @@
               cattle or sheep graze nearby, as infected animals can transmit a
               liver fluke parasite to humans.
             </p>
-
-            <div id="area">
-              <p id="area"><em>Fence, Town, ..</em></p>
+            <div id="herb2">
+              <img class="planteIconer" src="img/urte_ikon_2.webp" alt="urte_ikon_2" />
             </div>
+          </article>
+        </div>
+
+        <div class="right_side">
+          <article id="bgCirkel">
+            <h2 class="h2_produktside rød_h2">How It Looks</h2>
+            <p class="rødTekst">
+              Watercress can grow 40-60 cm high and has hollow, succulent stems.
+              The leaves are oval-shaped and look like small water lilies. They
+              grow in pairs on side shoots off the main stem and end in a single
+              round leaf. Smooth all over, the plant develops small, white
+              flowers that are yellowish-green in the center.
+            </p>
+          </article>
+          <div id="herb1">
+            <img class="planteIconer" src="img/urte_ikon_1.webp" alt="urte_ikon_1" />
           </div>
-        </article>
-
-        <div id="herb2">
-          <img
-            class="planteIconer"
-            src="img/urte_ikon_2.webp"
-            alt="urte_ikon_2"
-          />
+          <div class="sti2">
+            <img id="sti2" src="img/prudukt/sti2.webp" alt="sti2" />
+          </div>
         </div>
-
-        <div class="sti2">
-          <img id="sti2" src="img/prudukt/sti2.webp" alt="sti2" />
-        </div>
-      </section>
-        </template>
-
-      <div id="posbtn">
-        <p id="test">Test your new knowledge on herbs and smaller plants</p>
+      </div>
+      <br>
+      <div class="quiz_grid">
         <div>
-          <a id="quizbtn" href="quiz.html">Quiz here</a>
+          <p class="quiz_text_product">
+            Test your new knowledge on herbs and smaller plants. Try our quiz.
+          </p>
         </div>
+        <div class="path_2"><img src="img/sti5.webp" alt="" /></div>
+        <div class="path_3"><img src="img/sti3.webp" alt=""></div>
+        <div><a href="quiz.html" class="quiz">Quiz Here</a></div>
       </div>
-    </main>
+    </template>
 
-    <footer class="footer-grid">
-      <div class="footertime">
-        <div>
-          <a href="https://madfeed.co/">
-            <img src="img/mad.gif" alt="" />
-          </a>
-        </div>
-      </div>
-      <div class="footeraddress">
-        <div class="link">
-          <a
-            href="https://vildmad.dk/dk/presse"
-            style="font-family: Arial, sans-serif; font-size: large"
-            >Press and contact</a
-          >
-        </div>
-      </div>
-      <div class="footersm">
-        <img src="img/nordea.gif" alt="" />
-      </div>
-      <div class="footerlogo">
-        <a href="https://www.facebook.com/vildmaddk">
-          <img
-            src="img/fb.gif"
-            alt=""
-            style="width: 35px; height: 35px; margin-right: 5px"
-          />
-        </a>
-        <a href="https://www.instagram.com/vildmaddk/">
-          <img
-            src="img/insta.gif"
-            alt=""
-            style="width: 35px; height: 35px; margin-left: 5px"
-          />
+  </main>
+
+  <footer class="footer-grid">
+    <div class="footertime">
+      <div>
+        <a href="https://madfeed.co/">
+          <img src="img/mad.gif" alt="" />
         </a>
       </div>
-    </footer>
-  </body>
-  <script src="js/produkt.js"></script>
+    </div>
+    <div class="footeraddress">
+      <div class="link">
+        <a href="https://vildmad.dk/dk/presse" style="font-family: Arial, sans-serif; font-size: large">Press and
+          contact</a>
+      </div>
+    </div>
+    <div class="footersm">
+      <img src="img/nordea.gif" alt="" />
+    </div>
+    <div class="footerlogo">
+      <a href="https://www.facebook.com/vildmaddk">
+        <img src="img/fb.gif" alt="" style="width: 35px; height: 35px; margin-right: 5px" />
+      </a>
+      <a href="https://www.instagram.com/vildmaddk/">
+        <img src="img/insta.gif" alt="" style="width: 35px; height: 35px; margin-left: 5px" />
+      </a>
+    </div>
+  </footer>
+</body>
+<script src="js/produkt.js"></script>
+
 </html>
