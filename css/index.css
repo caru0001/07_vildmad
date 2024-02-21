@@ -2,6 +2,22 @@ main {
   margin: 50px;
 }
 
+/* brødkrummesti */
+#breadcrumbs {
+  padding: 10px; /* Tilføj lidt polstring for at give plads til indholdet */
+  height: 30px;
+}
+
+#breadcrumbs a {
+  text-decoration: none; /* Fjern understregning fra links */
+  color: #333; /* Skift farven på links */
+}
+
+#breadcrumbs a:hover {
+  text-decoration: underline; /* Understrege links ved hover */
+  color: #555; /* Skift farven på links ved hover */
+}
+
 .app_grid {
   display: flex;
   gap: 10px;
