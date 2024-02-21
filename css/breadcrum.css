@@ -1,0 +1,7 @@
+.breadstil {
+  color: grey; /* Skift farven til rød for det aktuelle link */
+  font-weight: bold; /* Gør teksten fed for det aktuelle link */
+}
+.breadstil a {
+  color: grey;
+}
