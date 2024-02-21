@@ -1,4 +1,7 @@
-#breadcrumbs {
+.current-page {
   color: grey; /* Skift farven til rød for det aktuelle link */
   font-weight: bold; /* Gør teksten fed for det aktuelle link */
+}
+.current-page a {
+  color: grey;
 }
