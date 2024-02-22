@@ -54,6 +54,14 @@ main {
   text-align: center;
 }
 
+.season_clickable img {
+  transition: transform 0.3s ease-in-out;
+}
+
+.season_clickable:hover img {
+  background-color: #fffcf4;
+}
+
 .quiz {
   background-color: #fffcf4;
   font-family: "karla";

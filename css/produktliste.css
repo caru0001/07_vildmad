@@ -23,9 +23,18 @@ main {
   height: 250px;
   border-radius: 50%;
   background-color: rgba(255, 252, 244, 0.85);
+  transition: transform 0.3s ease-in-out;
 }
 
 .herb_clickable h3 {
   margin: 10px;
   text-align: center;
+}
+
+.season_clickable img {
+  transition: transform 0.3s ease-in-out;
+}
+
+.herbs:hover img {
+  background-color: #fffcf4;
 }
