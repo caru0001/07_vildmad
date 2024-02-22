@@ -4,6 +4,7 @@
 /* her henter én eller flere specifikke data */
 const urlParms = new URLSearchParams(window.location.search);
 const id = urlParms.get("id");
+const season = urlParms.get("season");
 
 /* i fetch url definerer vi i dette tilfælde at det er "id" der skal hentes */
 fetch(
@@ -43,4 +44,29 @@ function showData(item) {
 
   /* append */
   document.querySelector("main").appendChild(copy);
+
+  let mySeason;
+
+  if (season === 0) {
+    mySeason = "Spring";
+  } else if (season == 1) {
+    mySeason = "Summer";
+  } else if (season == 2) {
+    mySeason = "fall";
+  } else if (season == 3) {
+    mySeason = "winther";
+  } else {
+    mySeason = "Herbs";
+  }
+
+  if (season >= 0) {
+    console.log("season er ", season);
+    document.querySelector(
+      "#breadcrumbs"
+    ).innerHTML = `    <a href="index.html">home</a>|<a href="produktliste.html?season=${season}">${mySeason}</a>|${item[0].name} `;
+  } else {
+    document.querySelector(
+      "#breadcrumbs"
+    ).innerHTML = `    <a href="index.html">home</a>|<a href="produktliste.html">Herbs</a>|${item[0].name} `;
+  }
 }
