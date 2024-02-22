@@ -10,19 +10,19 @@ function submitQuiz() {
   var score = 0;
 
   if (answer1 === "c") {
-    score += 1;
+    score++;
   }
   if (answer2 === "b") {
-    score += 1;
+    score++;
   }
   if (answer3 === "b") {
-    score += 1;
+    score++;
   }
   if (answer4 === "b") {
-    score += 1;
+    score++;
   }
   if (answer5 === "b") {
-    score += 1;
+    score++;
   }
 
   // Giver en pop-up alert, som fortæller dig din score
