@@ -91,13 +91,6 @@
   max-width: 250px;
 }
 
-#herb2 {
-  rotate: 90deg;
-  position: absolute;
-  top: 65%;
-  left: 55%;
-}
-
 .rødTekst {
   color: #5b1419;
   max-width: 350px;
@@ -117,11 +110,30 @@
   width: 350px;
 }
 
-#herb1 {
-  position: absolute;
-  top: 70%;
-  left: 55%;
-  rotate: 25deg;
+@media (min-width: 1000px) {
+  #herb2 {
+    rotate: 90deg;
+    position: absolute;
+    top: 65%;
+    left: 55%;
+  }
+
+  #herb1 {
+    position: absolute;
+    top: 70%;
+    left: 55%;
+    rotate: 25deg;
+  }
+}
+
+@media (max-width: 1000px) {
+  #herb1 {
+    display: none;
+  }
+
+  #herb2 {
+    display: none;
+  }
 }
 
 /* ------------------------- WEB ------------------------ */
