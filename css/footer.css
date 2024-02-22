@@ -1,6 +1,6 @@
 footer {
-    background-color: #497d41;
-    color: white;
+    background-color: rgba(10, 44, 5, 0.65);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 footer {
     padding: 2em;
